@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>FinanBox</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="contenedor_sesion" id="contenedor_sesion">
+            <div class="logo">
+                <p>Logo</p>
+            </div>
+            <div class="datos">
+                <p class="titulo1">Inicio de sesión</p>
+                <p>Correo</p>
+                <br>
+                <input type="text" class="texto_sesion" placeholder="example@gmail.com" id="correo_verificar">
+                <br>
+                <br>
+                <p>Contraseña</p>
+                <br>
+                <input type="text" class="texto_sesion" id="contraseña_verificar">
+                <button class="boton_iniciar" id="iniciar_sesion">Iniciar</button>
+                <br>
+                <p class="boton_registrarse"><href id="boton_registrarse">Registrarse</href></p>
+            </div>
+            <nav class="selecion_registro" id="selecion_registro">
+                <p class="titulo2">Registrate con</p>
+                <button class="facebook">Facebook</button>
+                <button class="gmail">Gmail</button>
+                <button class="crear" id="crear">Crear cuenta</button>
+                <button class="cerrar" id="cerrar">Cancelar</button>
+            </nav>
+            <div class="crear_cuenta" id="crear_cuenta">
+                <p class="titulo3">Crea tu Cuenta</p>
+                <form>
+                    <p>Nombres</p>
+                    <input type="text" class="texto_sesion" id="nombres">
+                    <p>Apellidos</p>
+                    <input type="text" class="texto_sesion" id="apellidos">
+                    <p>Alias</p>
+                    <input type="text" class="texto_sesion" id="alias">
+                    <p>Correo</p>
+                    <input type="text" class="texto_sesion" placeholder="example@gmail.com" id="correo">
+                    <p>Contraseña</p>
+                    <input type="text" class="texto_sesion" id="contraseña">
+                </form>
+                <button class="boton_registro" id="resgistrarse">Registrarse</button>
+                <button class="cerrar" id="volver">Volver</button>
+            </div>
+        </div>
+        <div class="contenedor_principal" id="contenedor_principal">
+            <header class="menu">
+                <p>FinanBox</p>
+            </header>
+            <p class="bienvenida">Bienvenido <span id="nombre_alias">Alias</span></p>
+           
+            <div class="monto_libre">
+                <p>$ <span id="montoLibre">00,0</span></p>
+            </div>
+            <div class="cuanto_gastas">
+                <button class="boton_cuanto_gastas">¿Cuánto quieres gastar?</button>
+            </div>
+    
+            <div class="datos_numericos">
+                <div class="ganancias">
+                    <div class="nombre_cuenta">
+                        <p>Mis Ganancias</p>
+                    </div>
+                    <div class="valor">
+                        <p>$ <span id="cantidad_ganancia">00.0</span></p>
+                    </div>
+                    <div class="despliegue">
+                        <p>V</p>
+                    </div>
+                    <div class="agregar" id="desplegable_ganancias">
+                        <p>+</p>
+                    </div>
+                    <div class="cuentas_desplegables">
+                        <div class="nombre_desplegable">
+                            <p>Nombre cuentas</p>
+                        </div>
+                        <div class="valor_desplegable">
+                            <p>$ <span>00.0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gastos">
+                    <div class="nombre_cuenta">
+                        <p>Mis Gastos</p>
+                    </div>
+                    <div class="valor">
+                        <p>$ <span id="cantidad_gasto">00.0</span></p>
+                    </div>
+                    <div class="despliegue">
+                        <p>V</p>
+                    </div>
+                    <div class="agregar" id="desplegable_gastos">
+                        <p>+</p>
+                    </div>
+                    <div class="cuentas_desplegables">
+                        <div class="nombre_desplegable">
+                            <p>Nombre cuentas</p>
+                        </div>
+                        <div class="valor_desplegable">
+                            <p>$ <span>00.0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ahorros">
+                    <div class="nombre_cuenta">
+                        <p>Mis Ahorros</p>
+                    </div>
+                    <div class="valor">
+                        <p>$ <span id="cantidad_ahorro">00.0</span></p>
+                    </div>
+                    <div class="despliegue">
+                        <p>V</p>
+                    </div>
+                    <div class="agregar" id="desplegable_ahorros">
+                        <p>+</p>
+                    </div>
+                    <div class="cuentas_desplegables">
+                        <div class="nombre_desplegable">
+                            <p>Nombre cuentas</p>
+                        </div>
+                        <div class="valor_desplegable">
+                            <p>$ <span>00.0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ingresar_datos" id="ingresar_datos">
+                    <div class="contenedor_datos">
+                        <div class="titulo_cuenta">
+                            <span id="tipo_cuenta">Ganancias</span>
+                        </div>
+                        <div class="contenido_cuenta">
+                            <p>Nombre de la cuentra</p>
+                            <input type="text" class="datos_cuenta" id="nombre_ganancia" id="nombre_gasto" id="nombre_ahorro">
+                            <p>Valor de la ceunta</p>
+                            <input type="number" class="datos_cuenta" id="valor_ganancia" id="valor_gasto" id="valor_ahorro">
+                            <button class="boton_datos" id="agregar_cuenta">Agregar</button>
+                            <button class="cerrar_datos" id="cerrar_cuentas">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="javaScript.js"></script>
+    </body>
+</html>
